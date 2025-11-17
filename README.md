@@ -1,1 +1,1 @@
-# greenhouse-automation
+# Greenhouse Automation
