@@ -22,6 +22,8 @@ MQTT_USERNAME = config['MQTT_USERNAME']
 MQTT_PASSWORD = config['MQTT_PASSWORD']
 MQTT_TOPIC = config['MQTT_TOPIC']
 
+MEASUREMENT_DELAY = config['MEASUREMENT_DELAY'] # measure the levels every X seconds.
+
 # Configure DHT11 sensor to pin 16
 sensor = dht.DHT11(Pin(16))
 
@@ -59,6 +61,7 @@ while 1:
     prev_message = message
   else:
     print("Temp + humidity unchanged")
+  sleep(MEASUREMENT_DELAY)
 
 
 
