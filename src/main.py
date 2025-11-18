@@ -61,7 +61,7 @@ while 1:
     prev_message = message
   else:
     print("Temp + humidity unchanged")
-  sleep(MEASUREMENT_DELAY)
+  time.sleep(MEASUREMENT_DELAY)
 
 
 
